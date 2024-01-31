@@ -12,5 +12,5 @@ export default {
     ui: 8080, //changing this has no effect, read only
   },
   defaultRequestTimeout: 5000, //5 seconds
-  defaultPageSize: 1 //how many posts to fetch from instagram at a time
+  defaultPageSize: 1 //only used if not specified by the api caller (so it is effectively readonly here)
 }
