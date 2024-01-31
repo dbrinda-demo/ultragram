@@ -1,0 +1,13 @@
+{
+  "name": "@nomad/config",
+  "version": "1.0.0",
+  "description": "basic config",
+  "author": "",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./config.js"
+  },
+  "dependencies": {
+  }
+}

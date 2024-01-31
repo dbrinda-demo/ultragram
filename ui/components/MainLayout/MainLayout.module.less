@@ -1,0 +1,42 @@
+@import (reference) '../../styles/base.less';
+
+.layout {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1280px;
+  margin: auto;
+  font-family: Helvetica, Arial, serif;
+  color: @darkText;
+  background-color: @lightBg;
+}
+
+.header, .footer {
+  text-align: center;
+  color: @lightText;
+  background-color: @darkBg;
+};
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.footer {
+  padding: 8px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 32px;
+}
+

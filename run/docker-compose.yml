@@ -1,0 +1,18 @@
+services:
+  nomad-server:
+    build: .
+    image: nomad-server:1
+    container_name: nomad-server
+    network_mode: host
+    volumes:
+      - ..:/home/user/nomad
+    command: sh -c 'cd /home/user/nomad/server && npm run start'
+
+  nomad-ui:
+    build: .
+    image: nomad-ui:1
+    container_name: nomad-ui
+    network_mode: host
+    volumes:
+      - ..:/home/user/nomad
+    command: sh -c 'cd /home/user/nomad/ui && npm run start'

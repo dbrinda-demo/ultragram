@@ -1,0 +1,47 @@
+@lightBg: #f3f3f3;
+@darkBg: #164099;
+@midBg: #6b899e;
+@primaryDark: #112233;
+@secondaryDark: #223344;
+@lightText: #e1edfd;
+@darkText: @primaryDark;
+@bodyPadding: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+main {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+html {
+  background-color: @midBg;
+  touch-action: pan-x pan-y;
+  height: 100%;
+  zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  color: @primaryDark;
+}
+
+a:hover {
+  cursor: pointer;
+  color: @secondaryDark;
+}
+
+img {
+  border-style: none;
+}

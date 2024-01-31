@@ -1,0 +1,13 @@
+{
+  "name": "@nomad/errors",
+  "version": "1.0.0",
+  "description": "error lib",
+  "author": "",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./errors.js"
+  },
+  "dependencies": {
+  }
+}

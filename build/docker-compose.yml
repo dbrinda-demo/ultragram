@@ -1,0 +1,9 @@
+services:
+  nomad-build:
+    build: .
+    image: nomad-build:1
+    container_name: nomad-build
+    network_mode: host
+    volumes:
+      - ..:/home/user/nomad
+    command: sh -c 'cd /home/user/nomad/build && sh build.sh'

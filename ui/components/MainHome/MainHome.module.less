@@ -1,0 +1,35 @@
+@import (reference) '../../styles/base.less';
+
+.home {
+  padding: 40px 20px;
+
+  .mainImgContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .mainImg {
+    margin: 40px 0 0 0;
+    max-width: 400px;
+    width: calc(100vw - (@bodyPadding + 20px) * 2); //probably over-relying on calc, there are other ways to do dynamic layouts
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    @media screen and (max-width: 400px) {
+      & {
+        font-size: 18px;  //there are better ways of dealing with font sizes but i'm just jamming a media query example in here
+      }
+    }
+  }
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    @media screen and (max-width: 400px) {
+      & {
+        font-size: 12px;
+      }
+    }
+  }
+}
